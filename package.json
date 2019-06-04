@@ -1,0 +1,24 @@
+{
+  "author": "Pedro",
+  "license": "ISC",
+  "scripts": {
+    "build": "npm run tsc",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "test": "mocha test/*.spec.js --reporter mochawesome --reporter-options reportDir=report,reportName=bsb-em-numeros-v1-server,reportTitle=\"BSB em Números\"",
+    "pretest": "npm run build",
+    "start": "node ."
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "mochawesome": "^4.0.0",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "odata-v4-pg": "^0.1.1",
+    "odata-v4-server": "^0.2.13",
+    "pg": "^7.11.0",
+    "ramda": "^0.26.1"
+  }
+}
